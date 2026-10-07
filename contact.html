@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior:smooth">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Contact Us — Carpena</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;1,9..144,300&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+:root{--ink:#0a0a0a;--card:#141414;--line:#2a2a2a;--off:#f6f1ee;--mute:#a8a19d;--pink:#f9b8cf;--rose:#e88aab;color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:5rem}
+body{background:var(--ink);color:var(--off);font-family:'Plus Jakarta Sans',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+.serif{font-family:'Fraunces',Georgia,serif}
+a,button,input,textarea,select{transition:all .25s ease}
+:focus-visible{outline:2px solid var(--pink);outline-offset:3px}
+.btn-pink{background:var(--pink);color:var(--ink);box-shadow:0 0 0 0 rgba(249,184,207,.0)}
+.btn-pink:hover{box-shadow:0 0 28px rgba(249,184,207,.55);transform:translateY(-2px)}
+.btn-line{border:1px solid var(--pink);color:var(--pink)}
+.btn-line:hover{background:var(--pink);color:var(--ink);box-shadow:0 0 28px rgba(249,184,207,.45);transform:translateY(-2px)}
+.card{background:var(--card);border:1px solid var(--line);box-shadow:0 18px 40px -20px rgba(0,0,0,.8)}
+a.card:hover{border-color:var(--pink);box-shadow:0 0 0 1px var(--pink),0 0 36px rgba(249,184,207,.22);transform:translateY(-4px)}
+a.card:hover .arrow{color:var(--pink);transform:translate(3px,-3px)}
+.field{background:var(--card);border:1px solid var(--line);color:var(--off)}
+.field:focus{outline:none;border-color:var(--pink);box-shadow:0 0 0 3px rgba(249,184,207,.2),0 0 22px rgba(249,184,207,.25)}
+.field::placeholder{color:#6f6a67}
+select.field{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' fill='none' stroke='%23f9b8cf' stroke-width='1.6'%3E%3Cpath d='M1 1.5l5 5 5-5'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 1.1rem center}
+.navlink{color:var(--mute)}.navlink:hover{color:var(--pink)}
+.glow{background:radial-gradient(closest-side,rgba(249,184,207,.28),transparent)}
+.rise{animation:rise .9s cubic-bezier(.2,.7,.2,1) both}.rise.d2{animation-delay:.12s}.rise.d3{animation-delay:.24s}
+@keyframes rise{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<header class="sticky top-0 z-30 backdrop-blur bg-black/70 border-b border-white/5" style="top:env(safe-area-inset-top,0px)">
+  <nav class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between" aria-label="Main">
+    <img src="images/logo.jpg" alt="Logo" width="50">
+    <div class="hidden sm:flex gap-8 text-sm">
+      <a class="navlink" href="index.html">Home</a><a class="navlink" href="about.html">About Us</a><a class="navlink" href="gallery.html">Gallery</a><a href="contact.html" aria-current="page" style="color:var(--pink)">Contact Me</a>
+    </div>
+    <a href="#form" class="btn-line rounded-full px-4 py-2 text-sm font-medium">Send a message</a>
+  </nav>
+</header>
+
+<main>
+<section class="relative overflow-hidden">
+  <div class="glow absolute -top-40 right-[-10%] w-[640px] h-[640px] pointer-events-none" aria-hidden="true"></div>
+  <div class="relative max-w-6xl mx-auto px-6 pt-20 pb-12 sm:pt-28 sm:pb-16">
+    <p class="rise text-sm" style="color:var(--mute)">Contact Us</p>
+    <h1 class="rise d2 serif font-light leading-[0.95] tracking-tight mt-5 text-[3.25rem] sm:text-[6.5rem]">Let's <em style="color:var(--pink)">talk.</em></h1>
+    <p class="rise d3 mt-8 max-w-xl text-lg leading-relaxed" style="color:var(--mute)">Have a question, a collaboration idea, or just a hello? Send a note and I'll reply soon.</p>
+  </div>
+</section>
+
+<section class="max-w-6xl mx-auto px-6 pb-24 grid md:grid-cols-5 gap-10">
+  <div class="md:col-span-2 grid gap-5 content-start">
+    <a href="mailto:hello@example.com" class="card rounded-3xl p-7 block">
+      <div class="flex justify-between items-start"><h2 class="serif text-2xl">Email</h2><span class="arrow text-xl" style="color:var(--mute)" aria-hidden="true">↗</span></div>
+      <p class="mt-2 text-sm" style="color:var(--mute)">carpenacandice@gmail.com</p>
+    </a>
+    <a href="https://www.facebook.com/candice.klaire.carpena" target="_blank" rel="noopener noreferrer" class="card rounded-3xl p-7 block">
+      <div class="flex justify-between items-start"><h2 class="serif text-2xl">Facebook</h2><span class="arrow text-xl" style="color:var(--mute)" aria-hidden="true">↗</span></div>
+      <p class="mt-2 text-sm" style="color:var(--mute)">Candice Klaire Carpena</p>
+    </a>
+    <a href="https://open.spotify.com/user/31pyipjz3ycbz7ziv2oplwn7lzpi" target="_blank" rel="noopener noreferrer" class="card rounded-3xl p-7 block">
+      <div class="flex justify-between items-start"><h2 class="serif text-2xl">Spotify</h2><span class="arrow text-xl" style="color:var(--mute)" aria-hidden="true">↗</span></div>
+      <p class="mt-2 text-sm" style="color:var(--mute)">I love music.</p>
+    </a>
+    <a href="https://maps.app.goo.gl/MbBvrcYkhD16cUjF9" target="_blank" rel="noopener noreferrer" class="card rounded-3xl p-7 block">
+      <div class="flex justify-between items-start"><h2 class="serif text-2xl">Location</h2><span class="arrow text-xl" style="color:var(--mute)" aria-hidden="true">↗</span></div>
+      <p class="mt-2 text-sm" style="color:var(--mute)">Purok Lirio Chapel</p>
+    </a>
+    <div class="card rounded-3xl p-7">
+      <h2 class="serif text-2xl">Response time</h2>
+      <p class="mt-2 text-sm" style="color:var(--mute)">I usually reply within a few days.</p>
+    </div>
+  </div>
+
+  <form id="form" class="card rounded-3xl p-7 sm:p-9 grid gap-5 md:col-span-3" novalidate>
+    <h2 class="serif text-3xl font-light">Send a message</h2>
+    <div class="grid sm:grid-cols-2 gap-5">
+      <div><label for="n" class="text-sm" style="color:var(--mute)">Name</label><input id="n" name="name" required autocomplete="name" class="field mt-2 w-full rounded-xl px-4 py-3" placeholder="Your name"></div>
+      <div><label for="e" class="text-sm" style="color:var(--mute)">Email</label><input id="e" name="email" type="email" required autocomplete="email" class="field mt-2 w-full rounded-xl px-4 py-3" placeholder="you@example.com"></div>
+    </div>
+    <div>
+      <label for="s" class="text-sm" style="color:var(--mute)">Subject</label>
+      <select id="s" name="subject" class="field mt-2 w-full rounded-xl px-4 py-3 pr-10">
+        <option>Just saying hello</option>
+        <option>Collaboration</option>
+        <option>Commission or project</option>
+        <option>Question about my work</option>
+      </select>
+    </div>
+    <div><label for="m" class="text-sm" style="color:var(--mute)">Message</label><textarea id="m" name="message" rows="6" required class="field mt-2 w-full rounded-xl px-4 py-3" placeholder="Tell me what's on your mind"></textarea></div>
+    <button class="btn-pink rounded-full px-7 py-3.5 font-semibold justify-self-start" type="submit">Send message</button>
+    <p id="ok" class="text-sm hidden" role="status" style="color:var(--pink)">Message ready to send — connect this form to your email service to go live.</p>
+    <p id="err" class="text-sm hidden" role="alert" style="color:var(--rose)">Please fill in your name, a valid email, and a message.</p>
+  </form>
+</section>
+</main>
+
+<footer class="border-t border-white/10">
+  <div class="max-w-6xl mx-auto px-6 py-10 flex flex-wrap gap-6 items-center justify-between text-sm">
+    <p style="color:var(--mute)">© 2026 Carpena. All rights reserved.</p>
+    <ul class="flex gap-6 list-none p-0">
+      <li><a class="navlink" href="#">GitHub</a></li><li><a class="navlink" href="#">LinkedIn</a></li><li><a class="navlink" href="#">Instagram</a></li><li><a class="navlink" href="mailto:hello@example.com">Email</a></li>
+    </ul>
+  </div>
+</footer>
+<script>
+document.getElementById('form').addEventListener('submit',function(e){
+  e.preventDefault();
+  var ok=document.getElementById('ok'),err=document.getElementById('err');
+  if(!this.checkValidity()){err.classList.remove('hidden');ok.classList.add('hidden');this.reportValidity();return}
+  err.classList.add('hidden');ok.classList.remove('hidden');this.reset();
+});
+</script>
+</body>
+</html>
